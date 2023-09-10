@@ -32,6 +32,13 @@ class PeopleListViewController: UIViewController {
             ),
             forCellReuseIdentifier: "PeopleCardTableViewCell"
         )
+        tableView.register(
+            UINib(
+                nibName: "EmptyTableViewCell",
+                bundle: nil
+            ),
+            forCellReuseIdentifier: "EmptyTableViewCell"
+        )
         customizeRefreshControl()
     }
 
@@ -63,11 +70,16 @@ extension PeopleListViewController: UITableViewDelegate, UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: PeopleCardTableViewCell = tableView.dequeueReusableCell(withIdentifier: "PeopleCardTableViewCell") as! PeopleCardTableViewCell
-        cell.viewModel = PeopleCardTableViewCell.ViewModel(
-            peopleName: peopleList?[indexPath.row].fullName ?? ""
-        )
-        return cell
+        if peopleList?.count == .zero {
+            let cell: EmptyTableViewCell = tableView.dequeueReusableCell(withIdentifier: "EmptyTableViewCell") as! EmptyTableViewCell
+            return cell
+        } else {
+            let cell: PeopleCardTableViewCell = tableView.dequeueReusableCell(withIdentifier: "PeopleCardTableViewCell") as! PeopleCardTableViewCell
+            cell.viewModel = PeopleCardTableViewCell.ViewModel(
+                peopleName: peopleList?[indexPath.row].fullName ?? ""
+            )
+            return cell
+        }
     }
 
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
