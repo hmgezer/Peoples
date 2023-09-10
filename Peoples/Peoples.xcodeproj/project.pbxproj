@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		DD2624FB2AAE002D0017946E /* PeopleCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2624F92AAE002D0017946E /* PeopleCardTableViewCell.swift */; };
 		DD2624FC2AAE002D0017946E /* PeopleCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2624FA2AAE002D0017946E /* PeopleCardTableViewCell.xib */; };
+		DD2625002AAE44300017946E /* EmptyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2624FE2AAE44300017946E /* EmptyTableViewCell.swift */; };
+		DD2625012AAE44300017946E /* EmptyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2624FF2AAE44300017946E /* EmptyTableViewCell.xib */; };
 		DD4388282AADF8A7009EF660 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4388272AADF8A7009EF660 /* AppDelegate.swift */; };
 		DD43882A2AADF8A7009EF660 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4388292AADF8A7009EF660 /* SceneDelegate.swift */; };
 		DD43882C2AADF8A7009EF660 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43882B2AADF8A7009EF660 /* ViewController.swift */; };
@@ -44,6 +46,8 @@
 /* Begin PBXFileReference section */
 		DD2624F92AAE002D0017946E /* PeopleCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCardTableViewCell.swift; sourceTree = "<group>"; };
 		DD2624FA2AAE002D0017946E /* PeopleCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleCardTableViewCell.xib; sourceTree = "<group>"; };
+		DD2624FE2AAE44300017946E /* EmptyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyTableViewCell.swift; sourceTree = "<group>"; };
+		DD2624FF2AAE44300017946E /* EmptyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EmptyTableViewCell.xib; sourceTree = "<group>"; };
 		DD4388242AADF8A7009EF660 /* Peoples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peoples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4388272AADF8A7009EF660 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD4388292AADF8A7009EF660 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 		DD2624F72AADFFFC0017946E /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				DD2624FD2AAE44130017946E /* EmptyTableViewCell */,
 				DD2624F82AAE00040017946E /* PeopleCardTableViewCell */,
 			);
 			path = UIComponents;
@@ -103,6 +108,15 @@
 				DD2624FA2AAE002D0017946E /* PeopleCardTableViewCell.xib */,
 			);
 			path = PeopleCardTableViewCell;
+			sourceTree = "<group>";
+		};
+		DD2624FD2AAE44130017946E /* EmptyTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DD2624FE2AAE44300017946E /* EmptyTableViewCell.swift */,
+				DD2624FF2AAE44300017946E /* EmptyTableViewCell.xib */,
+			);
+			path = EmptyTableViewCell;
 			sourceTree = "<group>";
 		};
 		DD43881B2AADF8A7009EF660 = {
@@ -292,6 +306,7 @@
 				DD4388342AADF8A9009EF660 /* LaunchScreen.storyboard in Resources */,
 				DD4388622AADFB42009EF660 /* PeopleList.storyboard in Resources */,
 				DD4388312AADF8A9009EF660 /* Assets.xcassets in Resources */,
+				DD2625012AAE44300017946E /* EmptyTableViewCell.xib in Resources */,
 				DD2624FC2AAE002D0017946E /* PeopleCardTableViewCell.xib in Resources */,
 				DD43882F2AADF8A7009EF660 /* Main.storyboard in Resources */,
 			);
@@ -323,6 +338,7 @@
 				DD43882C2AADF8A7009EF660 /* ViewController.swift in Sources */,
 				DD43885F2AADFB00009EF660 /* PeopleListViewController.swift in Sources */,
 				DD4388642AADFB63009EF660 /* PeopleListViewModel.swift in Sources */,
+				DD2625002AAE44300017946E /* EmptyTableViewCell.swift in Sources */,
 				DD4388282AADF8A7009EF660 /* AppDelegate.swift in Sources */,
 				DD43882A2AADF8A7009EF660 /* SceneDelegate.swift in Sources */,
 			);
