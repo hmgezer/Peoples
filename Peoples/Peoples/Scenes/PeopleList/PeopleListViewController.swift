@@ -12,6 +12,7 @@ class PeopleListViewController: UIViewController {
 
     public var viewModel = PeopleListViewModel()
     public var peopleList: [Person]?
+    private let refreshControl = UIRefreshControl()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +32,27 @@ class PeopleListViewController: UIViewController {
             ),
             forCellReuseIdentifier: "PeopleCardTableViewCell"
         )
+        customizeRefreshControl()
     }
 
     private func updateUI() {
         peopleList = viewModel.preparedPerson
         DispatchQueue.main.async { [weak self] in
+            self?.refreshControl.endRefreshing()
             self?.tableView.reloadData()
+        }
+    }
+
+    private func customizeRefreshControl() {
+        tableView.refreshControl = refreshControl
+        refreshControl.addTarget(self, action: #selector(refreshData), for: .valueChanged)
+        refreshControl.tintColor = UIColor(red:0.25, green:0.72, blue:0.85, alpha:1.0)
+    }
+
+    @objc private func refreshData() {
+        viewModel.isRefresh = true
+        viewModel.fetchNext(index: .zero) { [weak self] in
+            self?.updateUI()
         }
     }
 }

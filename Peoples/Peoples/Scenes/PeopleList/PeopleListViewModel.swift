@@ -11,6 +11,7 @@ extension PeopleListViewController {
     class PeopleListViewModel {
         public var preparedPerson: [Person] = []
         public var peopleListCount: String = ""
+        public var isRefresh: Bool = false
         private var isPaginationActive: Bool = false
 
         func fetchData(completion: @escaping () -> Void) {
@@ -26,11 +27,18 @@ extension PeopleListViewController {
 
         func fetchNext(index: Int, _ completion: @escaping () -> Void) {
             isPaginationActive = false
-            let maxIndex = preparedPerson.count - 5
-
-            guard index > maxIndex else { return }
-            fetchData {
-                completion()
+            if isRefresh {
+                isRefresh = false
+                preparedPerson = []
+                fetchData {
+                    completion()
+                }
+            } else {
+                let maxIndex = preparedPerson.count - 5
+                guard index > maxIndex else { return }
+                fetchData {
+                    completion()
+                }
             }
         }
 
