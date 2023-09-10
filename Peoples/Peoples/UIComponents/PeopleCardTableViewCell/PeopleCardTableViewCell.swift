@@ -8,16 +8,29 @@
 import UIKit
 
 class PeopleCardTableViewCell: UITableViewCell {
+    @IBOutlet weak var peopleNameLabel: UILabel!
 
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
+    public var viewModel: ViewModel? {
+        didSet {
+            guard let model = viewModel else {
+                return
+            }
+            initView(model: model)
+        }
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    private func initView(model: ViewModel) {
+        peopleNameLabel.text = model.peopleName
     }
-    
 }
+
+extension PeopleCardTableViewCell {
+    struct ViewModel {
+        public let peopleName: String
+
+        public init(peopleName: String = "") {
+            self.peopleName = peopleName
+        }
+    }
+}
+
