@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DD2624FB2AAE002D0017946E /* PeopleCardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD2624F92AAE002D0017946E /* PeopleCardTableViewCell.swift */; };
+		DD2624FC2AAE002D0017946E /* PeopleCardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD2624FA2AAE002D0017946E /* PeopleCardTableViewCell.xib */; };
 		DD4388282AADF8A7009EF660 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4388272AADF8A7009EF660 /* AppDelegate.swift */; };
 		DD43882A2AADF8A7009EF660 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4388292AADF8A7009EF660 /* SceneDelegate.swift */; };
 		DD43882C2AADF8A7009EF660 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43882B2AADF8A7009EF660 /* ViewController.swift */; };
@@ -16,6 +18,10 @@
 		DD43883F2AADF8A9009EF660 /* PeoplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43883E2AADF8A9009EF660 /* PeoplesTests.swift */; };
 		DD4388492AADF8A9009EF660 /* PeoplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4388482AADF8A9009EF660 /* PeoplesUITests.swift */; };
 		DD43884B2AADF8A9009EF660 /* PeoplesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43884A2AADF8A9009EF660 /* PeoplesUITestsLaunchTests.swift */; };
+		DD43885F2AADFB00009EF660 /* PeopleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43885D2AADFB00009EF660 /* PeopleListViewController.swift */; };
+		DD4388622AADFB42009EF660 /* PeopleList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4388612AADFB42009EF660 /* PeopleList.storyboard */; };
+		DD4388642AADFB63009EF660 /* PeopleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4388632AADFB63009EF660 /* PeopleListViewModel.swift */; };
+		DD4388682AADFCE3009EF660 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4388672AADFCE3009EF660 /* DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DD2624F92AAE002D0017946E /* PeopleCardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCardTableViewCell.swift; sourceTree = "<group>"; };
+		DD2624FA2AAE002D0017946E /* PeopleCardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PeopleCardTableViewCell.xib; sourceTree = "<group>"; };
 		DD4388242AADF8A7009EF660 /* Peoples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Peoples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4388272AADF8A7009EF660 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD4388292AADF8A7009EF660 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		DD4388442AADF8A9009EF660 /* PeoplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeoplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4388482AADF8A9009EF660 /* PeoplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesUITests.swift; sourceTree = "<group>"; };
 		DD43884A2AADF8A9009EF660 /* PeoplesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DD43885D2AADFB00009EF660 /* PeopleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewController.swift; sourceTree = "<group>"; };
+		DD4388612AADFB42009EF660 /* PeopleList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PeopleList.storyboard; sourceTree = "<group>"; };
+		DD4388632AADFB63009EF660 /* PeopleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewModel.swift; sourceTree = "<group>"; };
+		DD4388672AADFCE3009EF660 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DD2624F72AADFFFC0017946E /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				DD2624F82AAE00040017946E /* PeopleCardTableViewCell */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		DD2624F82AAE00040017946E /* PeopleCardTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				DD2624F92AAE002D0017946E /* PeopleCardTableViewCell.swift */,
+				DD2624FA2AAE002D0017946E /* PeopleCardTableViewCell.xib */,
+			);
+			path = PeopleCardTableViewCell;
+			sourceTree = "<group>";
+		};
 		DD43881B2AADF8A7009EF660 = {
 			isa = PBXGroup;
 			children = (
@@ -99,8 +128,9 @@
 		DD4388262AADF8A7009EF660 /* Peoples */ = {
 			isa = PBXGroup;
 			children = (
-				DD4388592AADF8E7009EF660 /* Service */,
-				DD4388572AADF8BA009EF660 /* Scenes */,
+				DD2624F72AADFFFC0017946E /* UIComponents */,
+				DD43885B2AADFAE3009EF660 /* Service */,
+				DD43885A2AADFAD6009EF660 /* Scenes */,
 				DD4388272AADF8A7009EF660 /* AppDelegate.swift */,
 				DD4388292AADF8A7009EF660 /* SceneDelegate.swift */,
 				DD43882B2AADF8A7009EF660 /* ViewController.swift */,
@@ -129,26 +159,30 @@
 			path = PeoplesUITests;
 			sourceTree = "<group>";
 		};
-		DD4388572AADF8BA009EF660 /* Scenes */ = {
+		DD43885A2AADFAD6009EF660 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				DD4388582AADF8C7009EF660 /* PeopleList */,
+				DD43885C2AADFAE8009EF660 /* PeopleList */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		DD4388582AADF8C7009EF660 /* PeopleList */ = {
+		DD43885B2AADFAE3009EF660 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-			);
-			path = PeopleList;
-			sourceTree = "<group>";
-		};
-		DD4388592AADF8E7009EF660 /* Service */ = {
-			isa = PBXGroup;
-			children = (
+				DD4388672AADFCE3009EF660 /* DataSource.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		DD43885C2AADFAE8009EF660 /* PeopleList */ = {
+			isa = PBXGroup;
+			children = (
+				DD43885D2AADFB00009EF660 /* PeopleListViewController.swift */,
+				DD4388632AADFB63009EF660 /* PeopleListViewModel.swift */,
+				DD4388612AADFB42009EF660 /* PeopleList.storyboard */,
+			);
+			path = PeopleList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +290,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD4388342AADF8A9009EF660 /* LaunchScreen.storyboard in Resources */,
+				DD4388622AADFB42009EF660 /* PeopleList.storyboard in Resources */,
 				DD4388312AADF8A9009EF660 /* Assets.xcassets in Resources */,
+				DD2624FC2AAE002D0017946E /* PeopleCardTableViewCell.xib in Resources */,
 				DD43882F2AADF8A7009EF660 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +318,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD4388682AADFCE3009EF660 /* DataSource.swift in Sources */,
+				DD2624FB2AAE002D0017946E /* PeopleCardTableViewCell.swift in Sources */,
 				DD43882C2AADF8A7009EF660 /* ViewController.swift in Sources */,
+				DD43885F2AADFB00009EF660 /* PeopleListViewController.swift in Sources */,
+				DD4388642AADFB63009EF660 /* PeopleListViewModel.swift in Sources */,
 				DD4388282AADF8A7009EF660 /* AppDelegate.swift in Sources */,
 				DD43882A2AADF8A7009EF660 /* SceneDelegate.swift in Sources */,
 			);
@@ -466,7 +506,7 @@
 				INFOPLIST_FILE = Peoples/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = PeopleList;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -494,7 +534,7 @@
 				INFOPLIST_FILE = Peoples/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = PeopleList;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
