@@ -16,6 +16,10 @@
 		DD43883F2AADF8A9009EF660 /* PeoplesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43883E2AADF8A9009EF660 /* PeoplesTests.swift */; };
 		DD4388492AADF8A9009EF660 /* PeoplesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4388482AADF8A9009EF660 /* PeoplesUITests.swift */; };
 		DD43884B2AADF8A9009EF660 /* PeoplesUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43884A2AADF8A9009EF660 /* PeoplesUITestsLaunchTests.swift */; };
+		DD43885F2AADFB00009EF660 /* PeopleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD43885D2AADFB00009EF660 /* PeopleListViewController.swift */; };
+		DD4388622AADFB42009EF660 /* PeopleList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD4388612AADFB42009EF660 /* PeopleList.storyboard */; };
+		DD4388642AADFB63009EF660 /* PeopleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4388632AADFB63009EF660 /* PeopleListViewModel.swift */; };
+		DD4388662AADFBB9009EF660 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD4388652AADFBB9009EF660 /* DataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,10 @@
 		DD4388442AADF8A9009EF660 /* PeoplesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PeoplesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD4388482AADF8A9009EF660 /* PeoplesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesUITests.swift; sourceTree = "<group>"; };
 		DD43884A2AADF8A9009EF660 /* PeoplesUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeoplesUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DD43885D2AADFB00009EF660 /* PeopleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewController.swift; sourceTree = "<group>"; };
+		DD4388612AADFB42009EF660 /* PeopleList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PeopleList.storyboard; sourceTree = "<group>"; };
+		DD4388632AADFB63009EF660 /* PeopleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleListViewModel.swift; sourceTree = "<group>"; };
+		DD4388652AADFBB9009EF660 /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +107,8 @@
 		DD4388262AADF8A7009EF660 /* Peoples */ = {
 			isa = PBXGroup;
 			children = (
-				DD4388592AADF8E7009EF660 /* Service */,
-				DD4388572AADF8BA009EF660 /* Scenes */,
+				DD43885B2AADFAE3009EF660 /* Service */,
+				DD43885A2AADFAD6009EF660 /* Scenes */,
 				DD4388272AADF8A7009EF660 /* AppDelegate.swift */,
 				DD4388292AADF8A7009EF660 /* SceneDelegate.swift */,
 				DD43882B2AADF8A7009EF660 /* ViewController.swift */,
@@ -129,26 +137,30 @@
 			path = PeoplesUITests;
 			sourceTree = "<group>";
 		};
-		DD4388572AADF8BA009EF660 /* Scenes */ = {
+		DD43885A2AADFAD6009EF660 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				DD4388582AADF8C7009EF660 /* PeopleList */,
+				DD4388652AADFBB9009EF660 /* DataSource.swift */,
+				DD43885C2AADFAE8009EF660 /* PeopleList */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		DD4388582AADF8C7009EF660 /* PeopleList */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = PeopleList;
-			sourceTree = "<group>";
-		};
-		DD4388592AADF8E7009EF660 /* Service */ = {
+		DD43885B2AADFAE3009EF660 /* Service */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		DD43885C2AADFAE8009EF660 /* PeopleList */ = {
+			isa = PBXGroup;
+			children = (
+				DD43885D2AADFB00009EF660 /* PeopleListViewController.swift */,
+				DD4388632AADFB63009EF660 /* PeopleListViewModel.swift */,
+				DD4388612AADFB42009EF660 /* PeopleList.storyboard */,
+			);
+			path = PeopleList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD4388342AADF8A9009EF660 /* LaunchScreen.storyboard in Resources */,
+				DD4388622AADFB42009EF660 /* PeopleList.storyboard in Resources */,
 				DD4388312AADF8A9009EF660 /* Assets.xcassets in Resources */,
 				DD43882F2AADF8A7009EF660 /* Main.storyboard in Resources */,
 			);
@@ -282,7 +295,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DD4388662AADFBB9009EF660 /* DataSource.swift in Sources */,
 				DD43882C2AADF8A7009EF660 /* ViewController.swift in Sources */,
+				DD43885F2AADFB00009EF660 /* PeopleListViewController.swift in Sources */,
+				DD4388642AADFB63009EF660 /* PeopleListViewModel.swift in Sources */,
 				DD4388282AADF8A7009EF660 /* AppDelegate.swift in Sources */,
 				DD43882A2AADF8A7009EF660 /* SceneDelegate.swift in Sources */,
 			);
